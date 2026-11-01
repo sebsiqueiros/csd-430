@@ -1,0 +1,101 @@
+
+/*
+ * Author: Sebastian Siqueiros
+ * Course: CSD-430 Server-Side Development
+ * Module: 2.2
+ * File: okinawa.css
+ * Purpose: Styles the Okinawa JSP webpage and its data table.
+ */
+
+/* General page appearance */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5f8;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main content container */
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Page title and introduction */
+h1 {
+    color: #176b87;
+    text-align: center;
+}
+
+h2 {
+    color: #176b87;
+    margin-top: 30px;
+}
+
+.intro {
+    text-align: center;
+    line-height: 1.7;
+}
+
+/* Table layout and formatting */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 14px;
+    text-align: left;
+}
+
+th {
+    background-color: #176b87;
+    color: white;
+}
+
+/* Alternating table rows */
+tbody tr:nth-child(even) {
+    background-color: #eaf3f7;
+}
+
+/* Highlight a row when the mouse moves over it */
+tbody tr:hover {
+    background-color: #d5eaf3;
+}
+
+/* Description below the table */
+.description {
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+/* Footer information */
+footer {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 13px;
+    color: #666666;
+}
+
+/* Keep the page readable on smaller screens */
+@media (max-width: 600px) {
+    .container {
+        width: auto;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+}

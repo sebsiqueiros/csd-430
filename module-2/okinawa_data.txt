@@ -1,0 +1,17 @@
+
+# CSD-430 Module 2.2
+# Author: Sebastian Siqueiros
+# File: okinawa_data.txt
+# Purpose: Stores five experiences from my time in Okinawa, Japan.
+#
+# Each record contains three fields separated by a vertical bar (|).
+# Field 1: Category - The type of experience.
+# Field 2: Experience - The name of the place or activity.
+# Field 3: Description - Information about the experience.
+# Lines beginning with # are documentation comments.
+
+Food|Okinawa Soba|One of the traditional Okinawan dishes I enjoyed during my time in Japan.
+Attractions|Churaumi Aquarium|A popular aquarium in Okinawa where I experienced the island's amazing marine life.
+Culture|Shurijo Castle|A historic castle that represents Okinawa's culture and the history of the Ryukyu Kingdom.
+Beaches|Emerald Beach|A beautiful beach in northern Okinawa with clear water and amazing scenery.
+Activities|Snorkeling|One of my favorite outdoor activities was exploring Okinawa's clear waters and marine life.
