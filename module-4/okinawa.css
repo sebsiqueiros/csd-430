@@ -1,0 +1,133 @@
+
+/*
+ * Author: Sebastian Siqueiros
+ * Course: CSD-430 Server-Side Development
+ * Module: 4.2
+ * File: okinawa.css
+ *
+ * Purpose:
+ * This stylesheet formats the Okinawa JavaBean JSP webpage.
+ * It controls the page layout, colors, text, and HTML table.
+ *
+ * The design is based on my Module 2.2 assignment and has
+ * been updated to support the five-column JavaBean table.
+ */
+
+/* General appearance of the webpage */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5f8;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container for the webpage content */
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Main page title */
+h1 {
+    color: #176b87;
+    text-align: center;
+}
+
+/* Section headings */
+h2 {
+    color: #176b87;
+    margin-top: 30px;
+}
+
+/* Introduction paragraph */
+.intro {
+    text-align: center;
+    line-height: 1.7;
+}
+
+/* General paragraph spacing */
+p {
+    line-height: 1.6;
+}
+
+/* HTML table containing JavaBean information */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: auto;
+}
+
+/* Table cells and column headings */
+th, td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+}
+
+/* Table column headings */
+th {
+    background-color: #176b87;
+    color: white;
+}
+
+/* Alternating row colors for readability */
+tbody tr:nth-child(even) {
+    background-color: #eaf3f7;
+}
+
+/* Highlight a row when the mouse moves over it */
+tbody tr:hover {
+    background-color: #d5eaf3;
+}
+
+/* Record count and field descriptions */
+.description {
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+/* Footer with course and assignment information */
+footer {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 13px;
+    color: #666666;
+}
+
+/*
+ * Adjust the layout for smaller screens.
+ * This keeps the five-column table readable.
+ */
+@media (max-width: 768px) {
+
+    .container {
+        width: auto;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: normal;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
